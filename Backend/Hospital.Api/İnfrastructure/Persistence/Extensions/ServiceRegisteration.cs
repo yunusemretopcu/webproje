@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace Hospital.Api.İnfrastructure.Persistence.Extensions
 {
-    public static class ServiceRegisteration
+    public static class ServiceRegisteration//servis kayıtları burada
     {
         public static void AddPersistenceServices(this IServiceCollection services)
         {
