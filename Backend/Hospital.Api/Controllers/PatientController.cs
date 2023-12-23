@@ -21,5 +21,11 @@ namespace Hospital.Api.Controllers
             var patient = _manager.PatientRepository.GetByIdAsync(id, false);
             return Ok(patient);
         }
+        [HttpGet]
+        public IActionResult GetPatients() 
+        {
+            var patients = _manager.PatientRepository.GetAll();
+            return Ok(patients);
+        }
     }
 }
