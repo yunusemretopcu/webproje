@@ -1,10 +1,12 @@
 ﻿using Hospital.Api.Domain.Entities;
 using Hospital.Api.Domain.Entities.Common;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Hospital.Api.İnfrastructure.Persistence.Context
 {
-    public class HospitalContext : DbContext
+    public class HospitalContext : IdentityDbContext<IdentityUser>
     {
         public HospitalContext(DbContextOptions options) : base(options)
         {
