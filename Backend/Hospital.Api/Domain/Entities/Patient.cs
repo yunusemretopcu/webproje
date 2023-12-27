@@ -8,7 +8,5 @@ namespace Hospital.Api.Domain.Entities
         public string LastName { get; set; }
         public  ICollection<Appointment> Appointments { get; set; }
         public string Email { get; set; }
-
-
     }
 }
