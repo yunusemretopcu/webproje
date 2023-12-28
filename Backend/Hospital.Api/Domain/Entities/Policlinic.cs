@@ -5,7 +5,5 @@ namespace Hospital.Api.Domain.Entities
     public class Policlinic : BaseEntity
     {
 
-
-
     }
 }

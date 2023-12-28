@@ -6,9 +6,8 @@ namespace Hospital.Api.Domain.Entities
     {
         public string Name { get; set; }
         public string LastName { get; set; }
+        public Guid PoliclinicId { get; set; }
+        public Policlinic Policlinic { get; set; }
         public ICollection<Appointment> Appointments { get; set; }     
-        
-
-
     }
 }

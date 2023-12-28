@@ -3,6 +3,7 @@ using Hospital.Api.Domain.Entities.Common;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 namespace Hospital.Api.İnfrastructure.Persistence.Context
 {
@@ -13,6 +14,9 @@ namespace Hospital.Api.İnfrastructure.Persistence.Context
         }
 
         public DbSet<Patient> Patients { get; set; }
+        public DbSet<Appointment> Appointments{ get; set; }
+        public DbSet<Doctor> Doctors { get; set; }
+        public DbSet<Policlinic> Policlinics { get; set; }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
@@ -36,7 +40,9 @@ namespace Hospital.Api.İnfrastructure.Persistence.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(HospitalContext).Assembly);
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
     }
 }
