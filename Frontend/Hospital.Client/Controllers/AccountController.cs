@@ -1,5 +1,4 @@
-﻿using Hospital.Client.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace Hospital.Client.Controllers
 {
@@ -14,10 +13,10 @@ namespace Hospital.Client.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public IActionResult Login(LoginModel model)
-        {
-            return RedirectToAction("Index", "Home");
-        }
+        //[HttpPost]
+        //public IActionResult Login(LoginModel model)
+        //{
+        //    return RedirectToAction("Index", "Home");
+        //}
     }
 }

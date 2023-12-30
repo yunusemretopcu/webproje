@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{DE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital.Api", "Backend\Hospital.Api\Hospital.Api.csproj", "{88933CDB-904D-49BE-971D-34EBFA32233E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital.Client", "Frontend\Hospital.Client\Hospital.Client.csproj", "{F5FF581B-86EE-4414-928E-76B74EDF7380}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +21,17 @@ Global
 		{88933CDB-904D-49BE-971D-34EBFA32233E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88933CDB-904D-49BE-971D-34EBFA32233E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88933CDB-904D-49BE-971D-34EBFA32233E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5FF581B-86EE-4414-928E-76B74EDF7380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5FF581B-86EE-4414-928E-76B74EDF7380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5FF581B-86EE-4414-928E-76B74EDF7380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5FF581B-86EE-4414-928E-76B74EDF7380}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{88933CDB-904D-49BE-971D-34EBFA32233E} = {7BE892B1-CB9E-4099-AA69-7CED3D5654BF}
+		{F5FF581B-86EE-4414-928E-76B74EDF7380} = {DE54C8C8-7933-4E52-8D9B-CEAB3FEC8CDD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DEE574E5-D88E-407F-B2B7-DB53FEAB8154}
