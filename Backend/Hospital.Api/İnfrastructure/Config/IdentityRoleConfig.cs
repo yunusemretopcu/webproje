@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hospital.Api.İnfrastructure.Persistence.Config
+namespace Hospital.Api.İnfrastructure.Config
 {
     public class IdentityRoleConfig : IEntityTypeConfiguration<IdentityRole>
     {

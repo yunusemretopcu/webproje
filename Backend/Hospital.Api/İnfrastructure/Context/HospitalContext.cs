@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
-namespace Hospital.Api.İnfrastructure.Persistence.Context
+namespace Hospital.Api.İnfrastructure.Context
 {
     public class HospitalContext : IdentityDbContext<IdentityUser>
     {
@@ -14,7 +14,7 @@ namespace Hospital.Api.İnfrastructure.Persistence.Context
         }
 
         public DbSet<Patient> Patients { get; set; }
-        public DbSet<Appointment> Appointments{ get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Policlinic> Policlinics { get; set; }
 

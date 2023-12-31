@@ -1,11 +1,11 @@
 ﻿using Hospital.Api.Application.Repositories;
-using Hospital.Api.İnfrastructure.Persistence.Context;
-using Hospital.Api.İnfrastructure.Persistence.Repositories;
+using Hospital.Api.İnfrastructure.Context;
+using Hospital.Api.İnfrastructure.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace Hospital.Api.İnfrastructure.Persistence.Extensions
+namespace Hospital.Api.İnfrastructure.Extensions
 {
     public static class ServiceRegisteration//servis kayıtları burada
     {
@@ -21,7 +21,7 @@ namespace Hospital.Api.İnfrastructure.Persistence.Extensions
                 options.Password.RequireDigit = false;
                 options.Password.RequiredLength = 6;
             }).AddEntityFrameworkStores<HospitalContext>();
-            
+
             services.AddScoped<IPatientRepository, PatientRepository>();
 
         }

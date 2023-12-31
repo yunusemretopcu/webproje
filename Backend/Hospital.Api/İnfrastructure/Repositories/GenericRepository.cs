@@ -1,11 +1,11 @@
 ﻿using Hospital.Api.Application.Repositories;
 using Hospital.Api.Domain.Entities.Common;
-using Hospital.Api.İnfrastructure.Persistence.Context;
+using Hospital.Api.İnfrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System.Linq.Expressions;
 
-namespace Hospital.Api.İnfrastructure.Persistence.Repositories
+namespace Hospital.Api.İnfrastructure.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {

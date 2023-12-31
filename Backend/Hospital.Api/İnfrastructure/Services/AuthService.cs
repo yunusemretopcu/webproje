@@ -1,7 +1,7 @@
 ﻿using Hospital.Api.Application.Services;
 using Microsoft.AspNetCore.Identity;
 
-namespace Hospital.Api.İnfrastructure.Persistence.Services
+namespace Hospital.Api.İnfrastructure.Services
 {
     public class AuthService : IAuthService
     {

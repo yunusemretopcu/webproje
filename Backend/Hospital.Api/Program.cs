@@ -1,5 +1,5 @@
-﻿using Hospital.Api.İnfrastructure.Persistence.Context;
-using Hospital.Api.İnfrastructure.Persistence.Extensions;
+﻿using Hospital.Api.İnfrastructure.Extensions;
+using Hospital.Api.İnfrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

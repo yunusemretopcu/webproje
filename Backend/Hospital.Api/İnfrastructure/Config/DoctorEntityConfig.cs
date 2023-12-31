@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Hospital.Api.İnfrastructure.Persistence.Config
+namespace Hospital.Api.İnfrastructure.Config
 {
     //public class DoctorEntityConfig : IEntityTypeConfiguration<Doctor>
     //{

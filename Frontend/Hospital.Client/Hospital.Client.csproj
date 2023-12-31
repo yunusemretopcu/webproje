@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Admin\Controllers\" />
+    <Folder Include="Admin\Models\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>

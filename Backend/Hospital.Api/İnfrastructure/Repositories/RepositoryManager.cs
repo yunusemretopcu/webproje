@@ -1,12 +1,12 @@
 ﻿using Hospital.Api.Application.Repositories;
-using Hospital.Api.İnfrastructure.Persistence.Context;
+using Hospital.Api.İnfrastructure.Context;
 
-namespace Hospital.Api.İnfrastructure.Persistence.Repositories
+namespace Hospital.Api.İnfrastructure.Repositories
 {
     public class RepositoryManager : IRepositoryManager
     {
         private readonly HospitalContext _context;
-       
+
         private readonly IPatientRepository _patientRepository;
 
         public RepositoryManager(HospitalContext context, IPatientRepository patientRepository)

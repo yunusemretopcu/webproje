@@ -1,4 +1,4 @@
-﻿namespace Hospital.Api.İnfrastructure.Persistence.Extensions
+﻿namespace Hospital.Api.İnfrastructure.Extensions
 {
     public class Configuration
     {
